@@ -1,6 +1,7 @@
 package com.azim.lab05
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -28,6 +29,10 @@ class MainActivity : AppCompatActivity() {
                 binding.rdBtnSmall.isChecked    -> pizzaSizePrice = 5.00
                 binding.rdBtnMedium.isChecked   -> pizzaSizePrice = 7.00
                 binding.rdBtnLarge.isChecked    -> pizzaSizePrice = 10.00
+                else -> {
+                    Toast.makeText(this, "Please choose the pizza size",
+                        Toast.LENGTH_SHORT).show()
+                }
             }
 
             // Multiple choices can be selected
