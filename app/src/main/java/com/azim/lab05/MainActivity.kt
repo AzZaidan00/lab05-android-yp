@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.btnOrder.setOnClickListener {
-            var pizzaSizePrice = 0.0    // type Double
-            var toppingSize = 0.0       // type Double
+            var pizzaSizePrice  = 0.0   // type Double
+            var toppingSize     = 0.0   // type Double
 
             // Only 1 option can be selected
             when {
